@@ -1,6 +1,19 @@
+/* global.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Mulish Font Family */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqk0gotcqA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* Add the rest of the @font-face rules here */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +30,7 @@
 }
 
 body {
+  font-family: 'Mulish', sans-serif; /* Apply the Mulish font globally */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

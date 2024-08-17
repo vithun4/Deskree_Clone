@@ -6,7 +6,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 export default function Home() {
-  const ourProducts = [
+  const ourProducts = [ // Product Card Details
     {
       title: "BaaS",
       description: "Pre-built backend services for web and mobile apps, powered by ION and DAC",

@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        dark: "rgb(var(--foreground-rgb))", // White text
+        light: "rgb(var(--background-start-rgb))", // Black background
+        gray: "#b1b1b1", // Gray text
+        link: "#7187ff", // Blue links
+        quote: "#7d7d7d", // Quote text color
+        "background-dark": "rgb(var(--background-start-rgb))", // Black background
+        "background-white": "rgb(var(--background-end-rgb))", // For contrast elements
+        "background-border": "#1b1b1c", // Dark border color
+        "border-black": "rgb(var(--foreground-rgb))", // White borders
       },
     },
   },

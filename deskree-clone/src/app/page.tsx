@@ -8,7 +8,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 export default function Home() {
   const ourProducts = [
     {
-      title: "Baas",
+      title: "BaaS",
       description: "Pre-built backend services for web and mobile apps, powered by ION and DAC",
       img_link: "BaaS_card_img.svg",
       color: "#C1C9FB",
@@ -50,9 +50,11 @@ export default function Home() {
         </div>
       </div>
       <div className="border border-[#2a2a2a] mt-10 p-4 rounded">
-        <div className="columns-2 items-center mb-28 mt-4">
-          <h2 className="text-2xl font-bold mt-10">Build cloud infrastructure with ease, powered by open-source, Atomic architecture.</h2>
-          <p className="text-lg mt-4">
+        <div className="flex items-start mb-28 mt-4 space-x-4">
+          <h2 className="text-2xl font-bold mt-0">
+            Build cloud infrastructure with ease, powered by open-source, Atomic architecture.
+          </h2>
+          <p className="text-lg mt-0">
             Deploy scalable and reusable workflows for your complex backend processes using nodes with no configuration, running independently, all managed by the Atomic architecture.
           </p>
         </div>
@@ -78,6 +80,38 @@ export default function Home() {
           />         
           ))}
         </BentoGrid>
+      </div>
+      <div>
+        Solution for businesses
+        <div className="flex gap-4">
+          <div className="flex-1 rounded-xl p-4 flex flex-col justify-between div-block-4">
+            <div>
+              <h2 className="text-xl font-bold mb-4">Enterprise program</h2>
+              <p className="mb-4">
+                Discover how Deskree provides secure and robust scalability and integration for large-scale businesses.
+              </p>
+              <p>SOC 2 Type II, GDPR & HIPAA Compliant</p>
+            </div>
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <Image
+              src="/desktree_workspace_img.jpg"
+              alt="Deskree Workspace"
+              width={700}
+              height={300}
+              objectFit="contain"
+              className="rounded-lg aspect-w-16 aspect-h-9"
+            />
+          </div>
+          <div className="flex-1 border rounded-xl p-4 flex flex-col justify-between startup-color text-black div-block-4 startup-color">
+            <div>
+              <h2 className="text-xl font-bold mb-4">Accelerate program</h2>
+              <p>
+                Learn how Deskree helps your team remain small, build features fast, and get to market faster, all with no overhead cloud cost.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center text-center bg-[#2a2a2a] p-16 rounded-lg mt-10">
         <p className="text-lg md:text-xl lg:text-2xl font-semibold">

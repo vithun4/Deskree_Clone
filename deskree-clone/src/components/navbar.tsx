@@ -42,7 +42,7 @@ export default function Navbar({ className }: { className?: string }) {
               <div className="text-gray text-sm dark:text-quote ml-2 mb-2">
                 Business Solutions
               </div>
-              <div className="border-t border-[#2a2a2a] p-4" />
+              <div className="border-t border-[#2a2a2a] ml-4" />
               <div className="text-sm grid grid-cols-1 gap-10">
                 <ProductItem
                   title="Enterprise program"

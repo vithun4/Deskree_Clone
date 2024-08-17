@@ -170,3 +170,31 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.div-block-4 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  background-color: #e34d2b;
+  border-radius: 8px;
+  flex-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  align-content: space-between;
+  padding: 32px;
+  display: grid
+}
+
+.div-block-4.agency-color {
+  background-color: #9b9b9b
+}
+
+.div-block-4.startup-color {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: linear-gradient(90deg,#c6c6c6,#fff)
+}
+
+.div-block-4.mr-4 {
+  margin-right: 16px
+}

@@ -28,7 +28,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-dark hover:opacity-[0.9] dark:text-light"
+        className="cursor-pointer text-dark hover:opacity-[0.9] dark:text-light text-bold text-lg"
       >
         {item}
       </motion.p>
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-background-dark dark:border-border-dark-gray/[0.2] bg-background-white shadow-input flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border border-transparent dark:bg-background-dark dark:border-border-dark-gray/[0.2] bg-background-white shadow-input flex justify-center space-x-4 px-8 pt-6 pb-4"
     >
       {children}
     </nav>
@@ -104,7 +104,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-dark hover:opacity-[0.9] dark:text-light"
+      className="text-dark hover:opacity-[0.9] dark:text-light text-lg"
     >
       {children}
     </Link>

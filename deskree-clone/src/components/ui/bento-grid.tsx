@@ -49,7 +49,7 @@ export const BentoGridItem = ({
           {icon}
         </div>
         <div
-          className="font-bold mb-2 mt-2 text-start"
+          className="font-bold mb-2 mt-2 text-start text-2xl"
           style={{ color: classColor }}
         >
           {title}

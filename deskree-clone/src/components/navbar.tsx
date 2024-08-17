@@ -20,9 +20,13 @@ export default function Navbar({ className }: { className?: string }) {
               height={24}
             />
           </div>
-          <div className="flex-1 flex justify-center space-x-8">
-            <MenuItem setActive={setActive} active={active} item="Products">
-              <div className="text-sm grid grid-cols-1 gap-10 p-4">
+          <div className="flex-1 flex justify-center space-x-8 text-bold">
+            <MenuItem setActive={setActive} active={active} item="Products ⮟">
+              <div className="text-gray text-sm dark:text-quote mb-2">
+                Our products
+              </div>
+              <div className="border-t border-[#2a2a2a]" />
+              <div className="text-sm grid grid-cols-1 gap-5 p-4">
                 <ProductItem 
                   title="Deskree Backend"
                   href="/"
@@ -37,13 +41,12 @@ export default function Navbar({ className }: { className?: string }) {
                   description="Scalable cloud solutions with ease"/>
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="Solutions">
-            
-              <div className="text-gray text-sm dark:text-quote ml-2 mb-2">
+            <MenuItem setActive={setActive} active={active} item="Solutions ⮟">
+              <div className="text-gray text-sm dark:text-quote mb-2">
                 Business Solutions
               </div>
-              <div className="border-t border-[#2a2a2a] ml-4" />
-              <div className="text-sm grid grid-cols-1 gap-10">
+              <div className="border-t border-[#2a2a2a]" />
+              <div className="text-sm grid grid-cols-1 gap-5 p-2">
                 <ProductItem
                   title="Enterprise program"
                   href="/"
@@ -62,7 +65,7 @@ export default function Navbar({ className }: { className?: string }) {
               Login
             </button>
             <button className="button-secondary">
-              Sign Up
+              Signup
             </button>
           </div>
         </Menu>

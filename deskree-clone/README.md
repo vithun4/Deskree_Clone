@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deskree Clone - Application Details
 
-## Getting Started
+This `README.md` covers details specific to the application code within the `app` folder of the Deskree Clone project.
 
-First, run the development server:
+## Folder Structure
+
+- **`components/`**: Contains reusable UI components like `Navbar`, `Footer`, and `BentoGrid`.
+- **`pages/`**: Holds the page components for different routes.
+- **`lib/`**: Contains utility functions used throughout the app.
+- **`globals.css`**: Custom global styles and Tailwind CSS configuration.
+
+## Global Styles
+
+The global styles are defined in `globals.css`, which includes:
+
+- Tailwind CSS base, components, and utilities.
+- Custom CSS variables for color schemes.
+- Font import for Mulish.
+
+## Key Components
+
+- **Navbar**: The top navigation bar, with a black background and responsive design.
+- **Footer**: The bottom section of the page, containing links to various site sections.
+- **FlipWords**: A dynamic component that animates between different words in a headline.
+
+## Development
+
+To start developing, ensure you are in the root of the project and run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server and allow you to view changes live.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Theming
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The app uses a dark theme with specific color codes:
 
-## Learn More
+- **Primary Color**: `#516CFD` for highlighting elements.
+- **Background Color**: Black (`#000000`) with white text.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ensure the build is optimized before deploying:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
 
-## Deploy on Vercel
+This will compile the project into a production-ready build.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any further questions, refer to the main `README.md` in the root of the repository or contact the project maintainer.
